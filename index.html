@@ -1,0 +1,353 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>Kevin Gandhi — Full Stack Developer</title>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&family=Inter:wght@300;400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet"/>
+<link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+
+<canvas id="bg-canvas"></canvas>
+<div class="orb orb1"></div>
+<div class="orb orb2"></div>
+<div class="scanlines"></div>
+
+<!-- ═══════════════ NAV ═══════════════ -->
+<nav id="navbar">
+  <a href="#hero" class="nav-logo">
+    <div class="logo-mark">GK</div>
+    <div class="logo-text">
+      <span class="logo-name">Kevin Gandhi</span>
+      <span class="logo-title">Full Stack Developer</span>
+    </div>
+  </a>
+  <ul class="nav-links">
+    <li><a href="#skills">Skills</a></li>
+    <li><a href="#experience">Experience</a></li>
+    <li><a href="#projects">Projects</a></li>
+    <li><a href="#about">About</a></li>
+    <li><a href="#contact" class="nav-cta">Hire Me</a></li>
+  </ul>
+  <div class="hamburger" onclick="toggleMenu()"><span></span><span></span><span></span></div>
+</nav>
+
+<!-- ═══════════════ HERO ═══════════════ -->
+<section id="hero">
+  <div class="hero-inner">
+    <div class="hero-text">
+      <div class="hero-badge"><div class="dpulse"></div>Open to full-time opportunities</div>
+      <h1 class="hero-name">Kevin <span class="grad">Gandhi</span></h1>
+      <div class="hero-role" id="typewriter"><span class="cursor"></span></div>
+      <p class="hero-desc">Motivated Front-End Developer crafting responsive, high-converting web experiences. Currently building pixel-perfect interfaces at SRV Media Pvt. Ltd. — React.js, TypeScript, modern CSS and beyond.</p>
+      <div class="hero-cta">
+        <a href="#projects" class="btn-p">View Projects <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg></a>
+        <a href="#contact" class="btn-s">Get in Touch <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></svg></a>
+      </div>
+      <div class="hero-stats">
+        <div><div class="stat-n" data-count="3">0</div><div class="stat-l">Internships</div></div>
+        <div><div class="stat-n" data-count="50">0</div><div class="stat-l">Projects Built</div></div>
+        <div><div class="stat-n" data-count="12">0</div><div class="stat-l">Technologies</div></div>
+        <!-- <div><div class="stat-n" data-count="2">0</div><div class="stat-l">Years Exp.</div></div> -->
+      </div>
+    </div>
+
+    <div class="hero-visual">
+      <div class="visual-glow"></div>
+      <div class="visual-ring visual-ring-1"></div>
+      <div class="visual-ring visual-ring-2"></div>
+      <div class="photo-shell">
+        <img src="./assets/profilepic.jpg" alt="Kevin Gandhi profile picture">
+      </div>
+      <div class="float-card float-card-top">React / Next</div>
+      <div class="float-card float-card-bottom">Available for hire</div>
+    </div>
+  </div>
+</section>
+
+<div class="divider"></div>
+
+<!-- ═══════════════ SKILLS ═══════════════ -->
+<section class="sec" id="skills">
+  <div class="sec-label rv">Technical Arsenal</div>
+  <h2 class="sec-title rv">Skills & Technologies</h2>
+
+  <!-- Orbit visual -->
+  <div class="skill-orbit rv" id="orbitViz"></div>
+
+  <!-- Category cards with bars -->
+  <div class="skill-cats">
+    <div class="scat" style="transition-delay:.0s">
+      <div class="scat-glow" style="background:radial-gradient(circle,rgba(0,212,255,.25),transparent 70%);opacity:.3"></div>
+      <div class="scat-head">
+        <div class="scat-icon" style="background:rgba(0,212,255,.12);color:var(--cyan)">🎨</div>
+        <div class="scat-name">Frontend</div>
+      </div>
+      <div class="skill-bar-row"><div class="skill-bar-label"><span>React.js</span><span>95%</span></div><div class="skill-bar-track"><div class="skill-bar-fill" style="--pct:95%;background:linear-gradient(90deg,var(--cyan),var(--cyan2))"></div></div></div>
+      <div class="skill-bar-row"><div class="skill-bar-label"><span>JavaScript / TS</span><span>88%</span></div><div class="skill-bar-track"><div class="skill-bar-fill" style="--pct:88%;background:linear-gradient(90deg,#FCD34D,#F59E0B)"></div></div></div>
+      <div class="skill-bar-row"><div class="skill-bar-label"><span>Next.js</span><span>75%</span></div><div class="skill-bar-track"><div class="skill-bar-fill" style="--pct:75%;background:linear-gradient(90deg,var(--purple),var(--purple2))"></div></div></div>
+      <div class="skill-bar-row"><div class="skill-bar-label"><span>Tailwind / Bootstrap</span><span>90%</span></div><div class="skill-bar-track"><div class="skill-bar-fill" style="--pct:90%;background:linear-gradient(90deg,#06B6D4,#3B82F6)"></div></div></div>
+    </div>
+    <div class="scat" style="transition-delay:.1s">
+      <div class="scat-glow" style="background:radial-gradient(circle,rgba(139,92,246,.25),transparent 70%);opacity:.3"></div>
+      <div class="scat-head">
+        <div class="scat-icon" style="background:rgba(139,92,246,.12);color:var(--purple2)">⚙️</div>
+        <div class="scat-name">State & Logic</div>
+      </div>
+      <div class="skill-bar-row"><div class="skill-bar-label"><span>Redux / Context API</span><span>82%</span></div><div class="skill-bar-track"><div class="skill-bar-fill" style="--pct:82%;background:linear-gradient(90deg,var(--purple),var(--pink))"></div></div></div>
+      <div class="skill-bar-row"><div class="skill-bar-label"><span>JWT Authentication</span><span>78%</span></div><div class="skill-bar-track"><div class="skill-bar-fill" style="--pct:78%;background:linear-gradient(90deg,#F59E0B,#EF4444)"></div></div></div>
+      <div class="skill-bar-row"><div class="skill-bar-label"><span>API Integration</span><span>90%</span></div><div class="skill-bar-track"><div class="skill-bar-fill" style="--pct:90%;background:linear-gradient(90deg,var(--cyan),var(--purple))"></div></div></div>
+      <div class="skill-bar-row"><div class="skill-bar-label"><span>MVC Architecture</span><span>72%</span></div><div class="skill-bar-track"><div class="skill-bar-fill" style="--pct:72%;background:linear-gradient(90deg,var(--green),#06B6D4)"></div></div></div>
+    </div>
+    <div class="scat" style="transition-delay:.2s">
+      <div class="scat-glow" style="background:radial-gradient(circle,rgba(34,197,94,.2),transparent 70%);opacity:.3"></div>
+      <div class="scat-head">
+        <div class="scat-icon" style="background:rgba(34,197,94,.10);color:var(--green)">🔧</div>
+        <div class="scat-name">Backend & Database</div>
+      </div>
+      <div class="skill-bar-row"><div class="skill-bar-label"><span>Node.js</span><span>70%</span></div><div class="skill-bar-track"><div class="skill-bar-fill" style="--pct:70%;background:linear-gradient(90deg,var(--green),#10B981)"></div></div></div>
+      <div class="skill-bar-row"><div class="skill-bar-label"><span>MongoDB</span><span>68%</span></div><div class="skill-bar-track"><div class="skill-bar-fill" style="--pct:68%;background:linear-gradient(90deg,#10B981,#06B6D4)"></div></div></div>
+      <div class="skill-bar-row"><div class="skill-bar-label"><span>Firebase</span><span>80%</span></div><div class="skill-bar-track"><div class="skill-bar-fill" style="--pct:80%;background:linear-gradient(90deg,#F59E0B,#EF4444)"></div></div></div>
+      <div class="skill-bar-row"><div class="skill-bar-label"><span>MySQL / PHP</span><span>60%</span></div><div class="skill-bar-track"><div class="skill-bar-fill" style="--pct:60%;background:linear-gradient(90deg,#3B82F6,var(--purple))"></div></div></div>
+    </div>
+    <div class="scat" style="transition-delay:.3s">
+      <div class="scat-glow" style="background:radial-gradient(circle,rgba(244,114,182,.2),transparent 70%);opacity:.3"></div>
+      <div class="scat-head">
+        <div class="scat-icon" style="background:rgba(244,114,182,.10);color:var(--pink)">🛠</div>
+        <div class="scat-name">Tools & Design</div>
+      </div>
+      <div class="skill-bar-row"><div class="skill-bar-label"><span>Git / GitHub</span><span>88%</span></div><div class="skill-bar-track"><div class="skill-bar-fill" style="--pct:88%;background:linear-gradient(90deg,#F97316,#EF4444)"></div></div></div>
+      <div class="skill-bar-row"><div class="skill-bar-label"><span>Framer Motion</span><span>75%</span></div><div class="skill-bar-track"><div class="skill-bar-fill" style="--pct:75%;background:linear-gradient(90deg,var(--pink),var(--purple))"></div></div></div>
+      <div class="skill-bar-row"><div class="skill-bar-label"><span>SEO & Performance</span><span>72%</span></div><div class="skill-bar-track"><div class="skill-bar-fill" style="--pct:72%;background:linear-gradient(90deg,var(--cyan),var(--green))"></div></div></div>
+      <div class="skill-bar-row"><div class="skill-bar-label"><span>WordPress</span><span>65%</span></div><div class="skill-bar-track"><div class="skill-bar-fill" style="--pct:65%;background:linear-gradient(90deg,#3B82F6,#8B5CF6)"></div></div></div>
+    </div>
+  </div>
+
+  <!-- Tags cloud -->
+  <div class="tags-cloud" id="tagsCloud"></div>
+</section>
+
+<div class="divider"></div>
+
+<!-- ═══════════════ EXPERIENCE ═══════════════ -->
+<section class="sec" id="experience">
+  <div class="sec-label rv">Career Path</div>
+  <h2 class="sec-title rv">Work Experience</h2>
+  <div class="timeline">
+    <div class="tli">
+      <div class="tl-dot live"></div>
+      <div class="tl-role">Frontend Developer Intern <span class="tl-badge">● Recent</span></div>
+      <div class="tl-head">
+        <div class="tl-co">SRV Media Pvt. Ltd.</div>
+        <div class="tl-date">Nov 2025 – April 2026</div>
+      </div>
+      <ul class="tl-pts">
+        <li>Developed and maintained high-converting landing pages for educational clients like DESPU and Manav Rachna.</li>
+        <li>Managed page redirections and ensured smooth navigation between campaign pages.</li>
+        <li>Delivered updates and enhancements across multiple client projects simultaneously within tight deadlines.</li>
+        <li>Performed cross-browser testing and debugging to ensure consistent UX across all platforms.</li>
+        <li>Collaborated with design and marketing teams to translate requirements into pixel-perfect web pages.</li>
+      </ul>
+    </div>
+    <div class="tli" style="transition-delay:.1s">
+      <div class="tl-dot"></div>
+      <div class="tl-role">React.js Intern</div>
+      <div class="tl-head">
+        <div class="tl-co">Arth Consultancy Services</div>
+        <div class="tl-date">Jun 2024 – Oct 2024</div>
+      </div>
+      <ul class="tl-pts">
+        <li>Developed responsive and dynamic web interfaces using React.js.</li>
+        <li>Improved UI/UX across pages using Bootstrap and Flexbox/Grid for mobile responsiveness.</li>
+        <li>Built multiple e-commerce websites with product filtering, cart, and checkout features.</li>
+      </ul>
+    </div>
+    <div class="tli" style="transition-delay:.2s">
+      <div class="tl-dot"></div>
+      <div class="tl-role">Web Development Intern</div>
+      <div class="tl-head">
+        <div class="tl-co">Amicii Infotech</div>
+        <div class="tl-date">Jul 2023 – Sep 2023</div>
+      </div>
+      <ul class="tl-pts">
+        <li>Built responsive landing pages and business websites for clients.</li>
+        <li>Worked on client projects involving React.js and WordPress.</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<div class="divider"></div>
+
+<!-- ═══════════════ PROJECTS SLIDERS ═══════════════ -->
+<section class="sec" id="projects">
+  <div class="sec-label rv">What I've Built</div>
+  <h2 class="sec-title rv">Projects</h2>
+  <div class="proj-section" id="projSection"></div>
+</section>
+
+<div class="divider"></div>
+
+<!-- ═══════════════ ABOUT ═══════════════ -->
+<section class="sec" id="about">
+  <div class="sec-label rv">Who I Am</div>
+  <h2 class="sec-title rv">About Me</h2>
+  <div class="about-grid">
+    <div class="ab-text">
+      <p>I'm a motivated and detail-oriented Front-End Developer from Pune, Maharashtra with a passion for building responsive, user-friendly web experiences. My core stack is React.js, TypeScript, and modern CSS — and I'm continuously pushing into full-stack territory.</p>
+      <p>I completed my Bachelor's in Computer Science Engineering from Government Engineering College Dahod, where I fell in love with problem-solving through code. Outside of work, I'm constantly experimenting with new projects — games, clones, e-commerce builds and interactive UI.</p>
+      <p>I thrive in collaborative environments and am currently seeking a full-time opportunity to bring creativity and technical skill to meaningful products.</p>
+      <div style="display:flex;gap:2rem;margin-top:1.5rem;flex-wrap:wrap">
+        <div><div style="font-size:.72rem;color:var(--gray);letter-spacing:.1em;text-transform:uppercase;margin-bottom:.3rem">Education</div><div style="font-weight:600;font-size:.88rem">B.E. Computer Science</div><div style="font-size:.78rem;color:var(--gray)">GEC Dahod </div></div>
+        <div><div style="font-size:.72rem;color:var(--gray);letter-spacing:.1em;text-transform:uppercase;margin-bottom:.3rem">Languages</div><div style="font-size:.84rem;color:var(--gray2)">English · Hindi · Gujarati</div></div>
+        <div><div style="font-size:.72rem;color:var(--gray);letter-spacing:.1em;text-transform:uppercase;margin-bottom:.3rem">Location</div><div style="font-size:.84rem;color:var(--gray2)">Pune, Maharashtra 🇮🇳</div></div>
+      </div>
+    </div>
+    <div class="str-wrap">
+      <div style="font-family:'JetBrains Mono',monospace;font-size:.72rem;color:var(--cyan);letter-spacing:.12em;margin-bottom:1rem">// strengths[]</div>
+      <div class="str-item"><span class="str-ico">💬</span><span class="str-name">Communication</span></div>
+      <div class="str-item"><span class="str-ico">🧩</span><span class="str-name">Problem Solving</span></div>
+      <div class="str-item"><span class="str-ico">🤝</span><span class="str-name">Teamwork</span></div>
+      <div class="str-item"><span class="str-ico">⏱</span><span class="str-name">Time Management</span></div>
+      <div class="str-item"><span class="str-ico">💡</span><span class="str-name">Creative Thinking</span></div>
+      <div class="str-item"><span class="str-ico">⚡</span><span class="str-name">Quick Learner</span></div>
+      <div class="str-item"><span class="str-ico">🔍</span><span class="str-name">Attention to Detail</span></div>
+      <div class="str-item"><span class="str-ico">🎯</span><span class="str-name">Leadership</span></div>
+    </div>
+  </div>
+</section>
+
+<div class="divider"></div>
+
+<!-- ═══════════════ CONTACT ═══════════════ -->
+<section class="sec" id="contact">
+  <div class="sec-label rv">Let's Connect</div>
+  <h2 class="sec-title rv">Get in Touch</h2>
+  <div class="contact-grid">
+    <div>
+      <p style="color:var(--gray2);line-height:1.9;margin-bottom:2rem;font-size:.92rem">I'm actively looking for new opportunities. Whether you have a project in mind, a question, or just want to say hello — my inbox is always open!</p>
+      <div class="c-links">
+        <a href="mailto:gandhikevin28@gmail.com" class="c-link"><div class="c-ico">📧</div><div><div class="c-lbl">Email</div><div class="c-val">gandhikevin28@gmail.com</div></div></a>
+        <a href="tel:+919016070264" class="c-link" style="transition-delay:.1s"><div class="c-ico">📱</div><div><div class="c-lbl">Phone</div><div class="c-val">+91 90160 70264</div></div></a>
+        <a href="https://www.linkedin.com/in/kevin-gandhi-20410421b" target="_blank" class="c-link" style="transition-delay:.2s"><div class="c-ico">💼</div><div><div class="c-lbl">LinkedIn</div><div class="c-val">kevin-gandhi-20410421b</div></div></a>
+        <a href="https://github.com/Kevin-2810" target="_blank" class="c-link" style="transition-delay:.3s"><div class="c-ico">🐙</div><div><div class="c-lbl">GitHub</div><div class="c-val">github.com/Kevin-2810</div></div></a>
+      </div>
+    </div>
+    <div class="terminal">
+      <div class="t-bar">
+        <div class="t-d" style="background:#ff5f57"></div><div class="t-d" style="background:#febc2e"></div><div class="t-d" style="background:#28c840"></div>
+        <span style="margin-left:.5rem;font-family:'JetBrains Mono',monospace;font-size:.68rem;color:var(--gray)">kevin.config.json</span>
+      </div>
+      <div class="t-body">
+        <div><span class="tc">// Open to opportunities</span></div>
+        <div><span style="color:var(--cyan)">{</span></div>
+        <div>&nbsp;&nbsp;<span class="tk">"name"</span>: <span class="ts">"Kevin Gandhi"</span>,</div>
+        <div>&nbsp;&nbsp;<span class="tk">"role"</span>: <span class="ts">"Full Stack Developer"</span>,</div>
+        <div>&nbsp;&nbsp;<span class="tk">"location"</span>: <span class="ts">"Pune, IN"</span>,</div>
+        <div>&nbsp;&nbsp;<span class="tk">"available"</span>: <span style="color:#F97316">true</span>,</div>
+        <div>&nbsp;&nbsp;<span class="tk">"preferredRoles"</span>: [</div>
+        <div>&nbsp;&nbsp;&nbsp;&nbsp;<span class="ts">"Frontend"</span>, <span class="ts">"Full Stack"</span></div>
+        <div>&nbsp;&nbsp;],</div>
+        <div>&nbsp;&nbsp;<span class="tk">"stack"</span>: <span class="ts">"React · Next · TS"</span>,</div>
+        <div>&nbsp;&nbsp;<span class="tk">"email"</span>: <span class="ts">"gandhikevin28@gmail.com"</span></div>
+        <div><span style="color:var(--cyan)">}</span></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════ FOOTER ═══════════════ -->
+<footer>
+  <div class="footer-glow"></div>
+  <div class="footer-top">
+    <!-- Brand -->
+    <div class="ft-brand">
+      <div style="display:flex;align-items:center;gap:.8rem">
+        <div class="logo-mark">KG</div>
+        <div class="logo-text"><span class="logo-name">Kevin Gandhi</span><span class="logo-title">Full Stack Developer</span></div>
+      </div>
+      <p>Building responsive, high-performance web experiences with modern JavaScript and a sharp eye for design.</p>
+      <div class="ft-avail"><div class="dpulse"></div>Available for hire</div>
+      <div class="ft-social" style="margin-top:1.2rem">
+        <a href="https://github.com/Kevin-2810" target="_blank" class="ft-soc" title="GitHub">🐙</a>
+        <a href="https://www.linkedin.com/in/kevin-gandhi-20410421b" target="_blank" class="ft-soc" title="LinkedIn">💼</a>
+        <a href="mailto:gandhikevin28@gmail.com" class="ft-soc" title="Email">📧</a>
+        <a href="tel:+919016070264" class="ft-soc" title="Phone">📱</a>
+        <a href="https://kevin-2810.github.io/MyPortfolio/" target="_blank" class="ft-soc" title="Live Demo">🌐</a>
+      </div>
+    </div>
+
+    <!-- Navigation -->
+    <div>
+      <div class="ft-col-title">Navigate</div>
+      <div class="ft-links">
+        <a href="#hero">Home</a>
+        <a href="#skills">Technical Skills</a>
+        <a href="#experience">Experience</a>
+        <a href="#projects">Projects</a>
+        <a href="#about">About Me</a>
+        <a href="#contact">Contact</a>
+      </div>
+    </div>
+
+    <!-- Projects -->
+    <div>
+      <div class="ft-col-title">Featured Work</div>
+      <div class="ft-links">
+        <a href="https://kevin-2810.github.io/Tourist-Responsive-Website/" target="_blank">Travelling Website ↗</a>
+        <a href="https://github.com/Kevin-2810/fashion-shop" target="_blank">Fashion Shop ↗</a>
+        <a href="https://github.com/Kevin-2810/MyPortfolio/" target="_blank">Portfolio ↗</a>
+        <a href="https://github.com/Kevin-2810/Manav-Rachna-Dual-Degree-" target="_blank">Manav Rachna ↗</a>
+        <a href="https://github.com/Kevin-2810/Fruitkha" target="_blank">Fruitkha ↗</a>
+        <a href="https://github.com/Kevin-2810" target="_blank">All Projects ↗</a>
+      </div>
+    </div>
+
+    <!-- Stack -->
+    <div>
+      <div class="ft-col-title">Tech Stack</div>
+      <div class="ft-stack">
+        <span class="ft-stk">React.js</span><span class="ft-stk">Next.js</span><span class="ft-stk">TypeScript</span>
+        <span class="ft-stk">Node.js</span><span class="ft-stk">MongoDB</span><span class="ft-stk">Firebase</span>
+        <span class="ft-stk">Tailwind</span><span class="ft-stk">Redux</span><span class="ft-stk">Git</span>
+        <span class="ft-stk">JavaScript</span><span class="ft-stk">HTML5</span><span class="ft-stk">CSS3</span>
+      </div>
+      <div style="margin-top:1.5rem">
+        <div class="ft-col-title">Education</div>
+        <div style="font-size:.8rem;color:var(--gray2)">B.E. Computer Science</div>
+        <div style="font-size:.75rem;color:var(--gray)">GEC Dahod </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Stats bar -->
+  <div class="footer-mid">
+    <div class="ft-stat-row">
+      <div class="ft-stat"><div class="ft-stat-n">3</div><div class="ft-stat-l">Internships</div></div>
+      <div class="ft-stat"><div class="ft-stat-n">50+</div><div class="ft-stat-l">Projects</div></div>
+      <div class="ft-stat"><div class="ft-stat-n">12+</div><div class="ft-stat-l">Technologies</div></div>
+      <div class="ft-stat"><div class="ft-stat-n">1+</div><div class="ft-stat-l">Years Exp</div></div>
+    </div>
+    <div class="ft-quote">"First, solve the problem.<br>Then, write the code." — John Johnson</div>
+    <button class="ft-scroll" onclick="window.scrollTo({top:0,behavior:'smooth'})">↑ Back to top</button>
+  </div>
+
+  <!-- Bottom bar -->
+  <div class="footer-bottom">
+    <div class="ft-copy">© 2025 <span>Kevin Gandhi</span>. Crafted with ☕ & React in Pune, India.</div>
+    <div class="ft-legal">
+      <a href="https://github.com/Kevin-2810" target="_blank">GitHub</a>
+      <a href="https://www.linkedin.com/in/kevin-gandhi-20410421b" target="_blank">LinkedIn</a>
+      <a href="mailto:gandhikevin28@gmail.com">Email</a>
+    </div>
+  </div>
+</footer>
+
+<button id="scrollTop" onclick="window.scrollTo({top:0,behavior:'smooth'})"><i class="fa-solid fa-arrow-up-long"></i></button>
+
+<!-- ════════════════════════ JS ════════════════════════ -->
+<script src="script.js"></script>
+</body>
+</html>
