@@ -4,9 +4,9 @@
 
 A modern, responsive, and interactive personal portfolio website showcasing my skills, experience, projects, and achievements as a Full Stack Developer.
 
-## 🌐 Live Demo
+## <a href"https://kevin-2810.github.io/MyPortfolio/">🌐 Live Demo</a>
 
-🔗 Portfolio: https://kevin-2810.github.io/MyPortfolio/
+
 
 ## 📋 Overview
 
